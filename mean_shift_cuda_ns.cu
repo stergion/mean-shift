@@ -218,9 +218,7 @@ __global__ void getDist(Matrix Y, Matrix X, double *d_conv) {
 		for(i = 0; i < X.height; i++) {
 			dist = 0;
 			for(j = 0; j < X.width; j++) {
-				//if (yRow == 0) printf("Before:\tdist=%f\t|\tY[%d][%d]= %f\tX[%d][%d]= %f\n", dist,i, j, Y.elements[yRow * Y.width + j],i, j, X.elements[i * X.width + j]);
 				dist += pow(Y.elements[yRow * Y.width + j] - X.elements[i * X.width + j], 2); // actually it is dist^2
-				//if (yRow == 0) printf("After:\tdist=%f\t|\tY[%d][%d]= %f\tX[%d][%d]= %f\n", dist,i, j, Y.elements[yRow * Y.width + j],i, j, X.elements[i * X.width + j]);
 			}
 
 			k = gausian(dist);
