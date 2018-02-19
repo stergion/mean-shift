@@ -1,7 +1,3 @@
-/**
-	* version 0.2;
-	* chabgelog:	+  @[kernel] void getDist: save data in shared memory and perform reduction.
-	*/
 #include <cuda.h>
 #include <cuda_runtime.h>
 #include <stdio.h>
