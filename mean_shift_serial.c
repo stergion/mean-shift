@@ -5,7 +5,6 @@
 #include <time.h>
 #include <sys/time.h>
 
-
 #define VAR		1
 #define EPSILON		0.0001
 #define RESFILE		"./res_serial.txt"
